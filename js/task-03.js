@@ -16,12 +16,10 @@ const images = [
 const galleryElement = document.querySelector(".gallery");
 
 // Crear el marcado de la galería
-const galleryMarkup = images
-  .map(
-    (image) =>
-      `<li><img src="${image.url}" alt="${image.alt}" class="gallery-img"></li>`
-  )
-  .join("");
+const galleryMarkup = images.map(
+  (image) =>
+    `<li><img src="${image.url}" alt="${image.alt}" class="gallery-img"></li>`
+);
 
 // Insertar el marcado en la galería en una sola operación
 galleryElement.insertAdjacentHTML("beforeend", galleryMarkup);

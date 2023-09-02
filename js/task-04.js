@@ -1,10 +1,10 @@
-const counter = document.getElementById("counter");
-const valueSpan = document.getElementById("value");
+const counter = document.querySelector("#counter");
+const valueSpan = document.querySelector("#value");
 const incrementButton = counter.querySelector("[data-action='increment']");
 const decrementButton = counter.querySelector("[data-action='decrement']");
 
 let counterValue = 0;
-valueSpan.textContent = counterValue;
+//valueSpan.textContent = counterValue;
 
 function increment() {
   counterValue += 1;
